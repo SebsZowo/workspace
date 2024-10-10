@@ -1,0 +1,176 @@
+/* Importa la fuente Montserrat desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Aplicar la fuente Montserrat a toda la página */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Diseño general del encabezado del proyecto */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f9fc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border: none; /* Quitar el borde del botón */
+    cursor: pointer; /* Cambiar el cursor para indicar que es clickeable */
+    width: 100%; /* Asegurar que ocupe el 100% del ancho */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+/* Efecto hover para el botón del proyecto */
+.project-header:hover {
+    background-color: #e0e6ef; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.project-info {
+    max-width: 60%;
+}
+
+.project-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.project-summary {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin: 8px 0;
+}
+
+.project-status {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 40%;
+}
+
+.status-container {
+    margin-bottom: 12px;
+    text-align: right;
+}
+
+.project-state {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+}
+
+.project-pending {
+    background-color: #e74c3c; /* Rojo suave */
+}
+
+.project-in-progress {
+    background-color: #f39c12; /* Naranja pastel */
+}
+
+.project-completed {
+    background-color: #27ae60; /* Verde pastel */
+}
+
+.project-dates p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #34495e;
+}
+
+.project-dates strong {
+    color: #2c3e50;
+}
+
+/* Nueva clase para contener el botón */
+.button-container {
+    position: fixed; /* Cambia a fixed para que el botón esté en la esquina inferior derecha de la ventana */
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la ventana */
+    right: 20px; /* Ajusta la distancia desde la parte derecha de la ventana */
+    z-index: 100; /* Asegúrate de que el botón esté por encima del contenido */
+}
+
+/* Estilos para el botón */
+.add-task-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.add-task-button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .add-task-button {
+        padding: 8px 12px; /* Ajusta el tamaño del botón para pantallas pequeñas */
+        font-size: 13px; /* Reduce ligeramente el tamaño de la fuente */
+    }
+
+    .button-container {
+        bottom: 15px; /* Ajusta la distancia inferior para pantallas pequeñas */
+        right: 15px; /* Ajusta la distancia derecha para pantallas pequeñas */
+    }
+}
+
+/* Estilo del menú de edición */
+.edit-menu {
+    display: none; /* Ocultar por defecto */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.edit-menu h2 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.edit-menu label {
+    font-size: 14px;
+    color: #34495e;
+}
+
+.edit-menu input,
+.edit-menu textarea,
+.edit-menu select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-menu button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-menu button:hover {
+    background-color: #2980b9;
+}

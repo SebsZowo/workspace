@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+.search-bar {
+    position: relative; /* Permite posicionar el ícono de lupa dentro del contenedor */
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    width: 300px; /* Ancho de la barra de búsqueda */
+    padding: 5px 10px;
+    padding-right: 35px; /* Espacio adicional para el ícono de lupa */
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar .search-icon {
+    position: absolute;
+    right: 10px; /* Alinea el ícono de lupa a la derecha */
+    width: 20px; /* Ajusta el tamaño del ícono de lupa */
+    height: 20px;
+    cursor: pointer; /* Muestra que el ícono es clickeable */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.nav-buttons button {
+    padding: 5px 10px;
+    background-color: #9370d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: #777;
+}
+
+#notifications-btn .icon,
+#user-btn .icon {
+    width: 20px; /* Ajusta el tamaño del icono */
+    height: 20px;
+    vertical-align: middle;
+}
+

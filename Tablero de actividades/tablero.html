@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Proyectos</title>
+    <link rel="stylesheet" href="styletablero.css"> <!-- Incluye tu CSS aquí -->
+    <script src="scripttablero.js" defer></script> <!-- Incluye tu JavaScript aquí -->
+</head>
+<body>
+    <!-- Cabecera principal (menú) -->
+    <header class="main-header">
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyectos</a></li>
+                <li><a href="#">Tareas</a></li>
+                <li><a href="#">Configuraciones</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Encabezado del Proyecto -->
+    <header>
+        <h1>Gestor de Proyectos</h1>
+    </header>
+
+    <!-- Contenedor de proyectos -->
+    <div id="projectContainer">
+        <!-- Proyecto 1 -->
+        <button class="project-header" id="project1" onclick="toggleEditMenu('editMenu1')">
+            <div class="project-info">
+                <h1 class="project-title">Proyecto XYZ</h1>
+                <p class="project-summary">Descripción breve del proyecto que explica los objetivos y el alcance.</p>
+            </div>
+
+            <div class="project-status">
+                <div class="status-container">
+                    <span>Estado del proyecto:</span>
+                    <span class="project-state project-in-progress">En progreso</span>
+                </div>
+
+                <div class="project-dates">
+                    <p><strong>Fecha de inicio:</strong> 01/10/2024</p>
+                    <p><strong>Fecha de finalización:</strong> 30/12/2024</p>
+                    <p><strong>Días restantes:</strong> 80 días</p>
+                </div>
+            </div>
+        </button>
+
+        <!-- Menú de edición para el primer proyecto -->
+        <div class="edit-menu" id="editMenu1">
+            <h2>Editar Proyecto</h2>
+            <label for="projectName">Nombre del Proyecto:</label>
+            <input type="text" id="projectName" value="Proyecto XYZ" />
+            
+            <label for="projectDescription">Descripción:</label>
+            <textarea id="projectDescription">Descripción breve del proyecto que explica los objetivos y el alcance.</textarea>
+            
+            <label for="projectStatus">Estado:</label>
+            <select id="projectStatus">
+                <option value="pending">Pendiente</option>
+                <option value="in-progress" selected>En progreso</option>
+                <option value="completed">Completado</option>
+            </select>
+
+            <button onclick="saveChanges()">Guardar Cambios</button>
+            <button onclick="toggleEditMenu('editMenu1')">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Botón para Agregar Tarea -->
+    <div class="button-container">
+        <button class="add-task-button" onclick="addTask()">+ Agregar Tarea</button>
+    </div>
+</body>
+</html>

@@ -4,12 +4,41 @@
 /* Aplicar la fuente Montserrat a toda la página */
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Quitar margen por defecto */
+}
+
+/* Diseño de la cabecera principal (menú) */
+.main-header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+}
+
+.main-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header nav ul li {
+    margin: 0 20px;
+}
+
+.main-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-header nav ul li a:hover {
+    text-decoration: underline;
 }
 
 /* Diseño general del encabezado del proyecto */
 header {
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .project-header {
@@ -92,13 +121,12 @@ header {
 
 /* Nueva clase para contener el botón */
 .button-container {
-    position: fixed; /* Cambia a fixed para que el botón esté en la esquina inferior derecha de la ventana */
-    bottom: 20px; /* Ajusta la distancia desde la parte inferior de la ventana */
-    right: 20px; /* Ajusta la distancia desde la parte derecha de la ventana */
-    z-index: 100; /* Asegúrate de que el botón esté por encima del contenido */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
 }
 
-/* Estilos para el botón */
 .add-task-button {
     background-color: #3498db;
     color: white;
@@ -116,22 +144,20 @@ header {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .add-task-button {
-        padding: 8px 12px; /* Ajusta el tamaño del botón para pantallas pequeñas */
-        font-size: 13px; /* Reduce ligeramente el tamaño de la fuente */
+        padding: 8px 12px;
+        font-size: 13px;
     }
 
     .button-container {
-        bottom: 15px; /* Ajusta la distancia inferior para pantallas pequeñas */
-        right: 15px; /* Ajusta la distancia derecha para pantallas pequeñas */
+        bottom: 15px;
+        right: 15px;
     }
 }
 
-/* Estilo del menú de edición */
 .edit-menu {
-    display: none; /* Ocultar por defecto */
+    display: none;
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -174,3 +200,4 @@ header {
 .edit-menu button:hover {
     background-color: #2980b9;
 }
+    

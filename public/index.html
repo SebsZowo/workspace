@@ -1,14 +1,40 @@
-<!-- Inicio de sesión y registro -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <!-- Link para cargar Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="login.css">
 </head>
-a
 <body>
-    <br>
+
+  <div class="global-container">
+    <div class="card login-form">
+      <div class="card-body">
+        <h3 class="card-title text-center">Inicio de Sesión</h3>
+        <div class="card-text">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Correo Electrónico</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Contraseña</label>
+              <a href="#" style="float:right;font-size:12px;">¿Olvidó su contraseña?</a>
+              <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+            
+            <div class="sign-up">
+              ¿Aún no tienes cuenta? <a href="#">Crea una.</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>

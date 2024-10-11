@@ -48,7 +48,7 @@ header {
     background-color: #f7f9fc;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .3);
     border: none; /* Quitar el borde del botón */
     cursor: pointer; /* Cambiar el cursor para indicar que es clickeable */
     width: 100%; /* Asegurar que ocupe el 100% del ancho */
@@ -159,10 +159,10 @@ header {
 .edit-menu {
     display: none;
     background-color: #ffffff;
-    border: 1px solid #ddd;
+    border: 1px solid #d8d6d6;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 1);
     margin-top: 10px;
 }
 
@@ -183,7 +183,7 @@ header {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 2px solid #aab0ae;
     border-radius: 4px;
 }
 
@@ -200,4 +200,3 @@ header {
 .edit-menu button:hover {
     background-color: #2980b9;
 }
-    

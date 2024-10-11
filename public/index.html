@@ -7,6 +7,7 @@
   <!-- Link para cargar Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="login.css">
+  <script src = "script.js"></script>
 </head>
 <body>
 
@@ -25,8 +26,7 @@
               <a href="#" style="float:right;font-size:12px;">¿Olvidó su contraseña?</a>
               <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
-            
+            <button onclick="iniciarSesion()" type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
             <div class="sign-up">
               ¿Aún no tienes cuenta? <a href="#">Crea una.</a>
             </div>
@@ -35,6 +35,12 @@
       </div>
     </div>
   </div>
+
+<script>
+    function iniciarSesion(){
+        window.location.href = 'inicio.html';
+           }
+           </script>
 
 </body>
 </html>
